@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content img {
+  height: 400px;
+  width: 700px;
+}
+
+.random img {
+ height: 300px;
+ width: 300px;
+}
