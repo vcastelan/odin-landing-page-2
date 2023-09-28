@@ -124,22 +124,27 @@ a {
 }
 
 /* call to action container */
-.bottom {
+.bottom-section {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 200px;
 }
 
-.blue-sign {
+.bottom-container {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   background: lightblue;
   border-radius: 10px;
 }
 
-.description {
+.left-description {
   display: flex;
+  flex-direction: column;
+}
+
+.right-button {
+
 }
 
 /* footer aligment middle of div */
