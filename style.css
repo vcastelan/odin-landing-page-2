@@ -1,17 +1,151 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+/* background color of header, top content and footer */
+.header,
+.footer,
+.top {
+  background-color: #1f2937;
+}
+
+/* logo css */
+.logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+/* left side top content styling */
+.awesome {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.subtext {
+  margin-bottom: 15px;
+}
+/* remove ul dots */
 ul {
   list-style: none;
 }
 
+/* removed link underline and styling */
 a {
   text-decoration: none;
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
-.content img {
+/* header needs flex with space-between */
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0px;
+}
+
+/* right side links display flex */
+.header ul {
+  display: flex;
+  gap: 30px;
+}
+
+/* all body content flex, column */
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  justify-content: space-evenly;
+  color: #f9faf8;
+  padding: 200px;
+}
+
+.top button {
+  background-color: blue;
+  color: #f9faf8;
+  padding: 8px 30px;
+  border-radius: 10px;
+  border-style: none;
+}
+/* content img resizing */
+.right img {
   height: 400px;
   width: 700px;
 }
 
-.random img {
+/* random content main text */
+.random {
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+  padding: 50px;
+}
+
+/* all random content img resizing */
+.random-container img {
  height: 300px;
  width: 300px;
+}
+
+.box {
+  max-width: 300px;
+}
+
+/* random container with the images and paragraphs */
+.random-container {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  padding: 0 200px 200px 200px;
+}
+
+/* quote contianer */
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #e5e7eb;
+  padding: 200px;
+}
+
+.quote {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+}
+
+/* call to action container */
+.bottom {
+  display: flex;
+  justify-content: center;
+  padding: 200px;
+}
+
+.blue-sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: lightblue;
+  border-radius: 10px;
+}
+
+.description {
+  display: flex;
+}
+
+/* footer aligment middle of div */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
