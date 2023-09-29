@@ -7,13 +7,14 @@ body {
 /* background color of header, top content and footer */
 .header,
 .footer,
-.top {
+.top-container {
   background-color: #1f2937;
 }
 
 /* logo css */
 .logo {
   font-size: 24px;
+  font-weight: bold;
   color: #f9faf8;
 }
 
@@ -41,7 +42,9 @@ a {
 /* header needs flex with space-between */
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 700px;
   padding: 10px 0px;
 }
 
@@ -57,14 +60,15 @@ a {
   flex-direction: column;
 }
 
-.top {
+.top-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 100px;
   color: #f9faf8;
-  padding: 200px;
+  padding: 100px;
 }
 
-.top button {
+.top-container button {
   background-color: blue;
   color: #f9faf8;
   padding: 8px 30px;
@@ -77,11 +81,12 @@ a {
   width: 700px;
 }
 
-/* random content main text */
-.random {
+/* middle container */
+.middle-container {
   text-align: center;
 }
 
+/* middle container title */
 .title {
   font-size: 36px;
   font-weight: bolder;
@@ -89,38 +94,44 @@ a {
   padding: 50px;
 }
 
-/* all random content img resizing */
-.random-container img {
- height: 300px;
- width: 300px;
+/* middle container with the images and paragraphs */
+.boxes-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 150px;
 }
 
 .box {
-  max-width: 300px;
+  max-width: 250px;
 }
 
-/* random container with the images and paragraphs */
-.random-container {
-  display: flex;
-  justify-content: center;
-  gap: 150px;
-  padding: 0 200px 200px 200px;
-}
+/* all random content imgs resizing */
+.box img {
+  height: 250px;
+  width: 250px;
+ }
 
 /* quote contianer */
 .quote-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
   background-color: #e5e7eb;
-  padding: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 680px;
 }
 
 .quote {
   font-size: 36px;
   font-style: italic;
   color: #1f2937;
+}
+
+.person {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 /* call to action container */
